@@ -10,8 +10,8 @@
         <mkdir dir="build/classes"/>
         <mkdir dir="dist"/>
     </target>
-    <target name="compile" depends="init" includeantruntime="false">
-        <javac srcdir="src" debug="true" destdir="build/classes">
+    <target name="compile" depends="init">
+        <javac srcdir="src" debug="true" destdir="build/classes" includeantruntime="false">
             <classpath refid="compile.classpath"/>
         </javac>
     </target>
